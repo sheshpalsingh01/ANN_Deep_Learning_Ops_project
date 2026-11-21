@@ -29,17 +29,17 @@ class CustomeException(Exception):
         )
 
 
-if __name__ == "__main__":
-    from ..logging.logger import logger
+# if __name__ == "__main__":
+#     from src.DeepLearningClassification.logging.logger import logger
 
-    try:
-        logger.info("Entering the try block")
+#     try:
+#         logger.info("Entering the try block")
 
-        a = 1 / 0
+#         a = 1 / 0
 
-        print("This will not be printed:", a)
+#         print("This will not be printed:", a)
 
-    except Exception as e:
-        custom_exception = CustomeException(e, sys)
-        print(custom_exception)
-        raise custom_exception from e
+#     except Exception as e:
+#         custom_exception = CustomeException(e, sys)
+#         print(custom_exception)
+#         raise custom_exception from e
