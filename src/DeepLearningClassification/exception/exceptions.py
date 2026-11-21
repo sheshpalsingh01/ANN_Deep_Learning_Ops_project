@@ -30,7 +30,7 @@ class CustomeException(Exception):
 
 
 if __name__ == "__main__":
-    from ..logging.logger import logger
+    from src.DeepLearningClassification.logging.logger import logger
 
     try:
         logger.info("Entering the try block")
